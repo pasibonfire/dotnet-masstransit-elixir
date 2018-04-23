@@ -1,0 +1,296 @@
+2018-04-09 16:04:21 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.1605.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:04:21 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Ecto.Repo.Supervisor/1
+    pid: <0.1661.0>
+    registered_name: []
+    exception exit: {{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.1661.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}},[{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,824}]},{'Elixir.Ecto.Adapters.SQL',child_spec,4,[{file,"lib/ecto/adapters/sql.ex"},{line,370}]},{'Elixir.Ecto.Repo.Supervisor',init,1,[{file,"lib/ecto/repo/supervisor.ex"},{line,155}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,294}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Consumer.Supervisor',<0.1659.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.1660.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 654
+  neighbours:
+2018-04-09 16:04:21 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Consumer.Supervisor'}
+     Context:    start_error
+     Reason:     {noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.1661.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Consumer.Repo'},{mfargs,{'Elixir.Consumer.Repo',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-04-09 16:04:21 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.1658.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Consumer.Repo',{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.1661.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}}},{'Elixir.Consumer.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.1657.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.1659.0>,normal}]
+    links: [<0.1657.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 187
+  neighbours:
+2018-04-09 16:05:15 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.196.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:05:16 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Ecto.Repo.Supervisor/1
+    pid: <0.252.0>
+    registered_name: []
+    exception exit: {{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.252.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}},[{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,824}]},{'Elixir.Ecto.Adapters.SQL',child_spec,4,[{file,"lib/ecto/adapters/sql.ex"},{line,370}]},{'Elixir.Ecto.Repo.Supervisor',init,1,[{file,"lib/ecto/repo/supervisor.ex"},{line,155}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,294}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Consumer.Supervisor',<0.250.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.251.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 677
+  neighbours:
+2018-04-09 16:05:16 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Consumer.Supervisor'}
+     Context:    start_error
+     Reason:     {noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.252.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Consumer.Repo'},{mfargs,{'Elixir.Consumer.Repo',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-04-09 16:05:16 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.249.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Consumer.Repo',{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.252.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}}},{'Elixir.Consumer.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.248.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.250.0>,normal}]
+    links: [<0.248.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 187
+  neighbours:
+2018-04-09 16:05:34 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.205.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:05:34 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Ecto.Repo.Supervisor/1
+    pid: <0.261.0>
+    registered_name: []
+    exception exit: {{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.261.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}},[{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,824}]},{'Elixir.Ecto.Adapters.SQL',child_spec,4,[{file,"lib/ecto/adapters/sql.ex"},{line,370}]},{'Elixir.Ecto.Repo.Supervisor',init,1,[{file,"lib/ecto/repo/supervisor.ex"},{line,155}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,294}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Consumer.Supervisor',<0.259.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.260.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 675
+  neighbours:
+2018-04-09 16:05:34 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Consumer.Supervisor'}
+     Context:    start_error
+     Reason:     {noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.261.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Consumer.Repo'},{mfargs,{'Elixir.Consumer.Repo',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-04-09 16:05:34 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.258.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Consumer.Repo',{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.261.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}}},{'Elixir.Consumer.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.257.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.259.0>,normal}]
+    links: [<0.257.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 186
+  neighbours:
+2018-04-09 16:06:59 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.196.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:06:59 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Ecto.Repo.Supervisor/1
+    pid: <0.252.0>
+    registered_name: []
+    exception exit: {{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.252.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}},[{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,824}]},{'Elixir.Ecto.Adapters.SQL',child_spec,4,[{file,"lib/ecto/adapters/sql.ex"},{line,370}]},{'Elixir.Ecto.Repo.Supervisor',init,1,[{file,"lib/ecto/repo/supervisor.ex"},{line,155}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,294}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Consumer.Supervisor',<0.250.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.251.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 675
+  neighbours:
+2018-04-09 16:06:59 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Consumer.Supervisor'}
+     Context:    start_error
+     Reason:     {noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.252.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Consumer.Repo'},{mfargs,{'Elixir.Consumer.Repo',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-04-09 16:06:59 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.249.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Consumer.Repo',{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.252.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}}},{'Elixir.Consumer.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.248.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.250.0>,normal}]
+    links: [<0.248.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 186
+  neighbours:
+2018-04-09 16:12:05 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.599.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:12:05 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:Elixir.Ecto.Repo.Supervisor/1
+    pid: <0.655.0>
+    registered_name: []
+    exception exit: {{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.655.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}},[{'Elixir.GenServer',call,3,[{file,"lib/gen_server.ex"},{line,824}]},{'Elixir.Ecto.Adapters.SQL',child_spec,4,[{file,"lib/ecto/adapters/sql.ex"},{line,370}]},{'Elixir.Ecto.Repo.Supervisor',init,1,[{file,"lib/ecto/repo/supervisor.ex"},{line,155}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,294}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,365}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,333}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: ['Elixir.Consumer.Supervisor',<0.653.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.654.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 653
+  neighbours:
+2018-04-09 16:12:05 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Consumer.Supervisor'}
+     Context:    start_error
+     Reason:     {noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.655.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}
+     Offender:   [{pid,undefined},{id,'Elixir.Consumer.Repo'},{mfargs,{'Elixir.Consumer.Repo',start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-04-09 16:12:05 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.652.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.Consumer.Repo',{noproc,{'Elixir.GenServer',call,['Elixir.Ecto.Registry',{associate,<0.655.0>,{'Elixir.Consumer.Repo','Elixir.Consumer.Repo.Pool',[{name,'Elixir.Consumer.Repo.Pool'},{otp_app,consumer},{repo,'Elixir.Consumer.Repo'},{timeout,15000},{pool_timeout,5000},{adapter,'Elixir.Ecto.Adapters.Postgres'},{username,<<"postgres">>},{password,<<"postgres">>},{database,<<"consumer_dev">>},{hostname,<<"localhost">>},{pool_size,10},{pool,'Elixir.DBConnection.Poolboy'}]}},5000]}}}},{'Elixir.Consumer.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,247}]}]}
+    ancestors: [<0.651.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.653.0>,normal}]
+    links: [<0.651.0>,<0.33.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 186
+  neighbours:
+2018-04-09 16:12:33 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.318.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:17:20 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.318.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:17:44 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.454.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:26:08 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.732.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:26:12 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.740.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:26:16 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.745.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:26:22 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.747.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:26:33 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.749.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:26:44 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.751.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:26:55 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.753.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:27:06 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.755.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:27:17 =ERROR REPORT====
+Ranch listener 'Elixir.ConsumerWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.757.0> exit with reason: {{undef,[{'Elixir.ConsumerWeb.RoomChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/Users/pasik/Projects/mq_poc/consumer/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-04-09 16:46:12 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.206.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:47:11 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.205.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:49:25 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.197.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:51:38 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.197.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2018-04-09 16:53:26 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.Logger.Supervisor'}
+     Context:    child_terminated
+     Reason:     normal
+     Offender:   [{pid,<0.205.0>},{id,'Elixir.Logger.ErrorHandler'},{mfargs,{'Elixir.Logger.Watcher',start_link,[{error_logger,'Elixir.Logger.ErrorHandler',{true,false,500}}]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
